@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+
+    <!-- 获取网站的标题-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text=""
+        />
+
+    <!--开始加载提示-->
+    <TextView
+        android:id="@+id/text_beginLoading"
+        android:layout_below="@+id/title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text=""
+        />
+
+    <!--获取加载进度-->
+    <TextView
+        android:id="@+id/text_Loading"
+        android:layout_below="@+id/text_beginLoading"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text=""
+        />
+
+    <!--结束加载提示-->
+    <TextView
+        android:id="@+id/text_endLoading"
+        android:layout_below="@+id/text_Loading"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text=""
+        />
+
+    <Button
+        android:layout_below="@+id/text_endLoading"
+        android:id="@+id/btn_Jtf"
+        android:text="JFS"
+        android:textSize="28sp"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <!--显示网页区域-->
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_below="@+id/btn_Jtf"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        />
+</RelativeLayout>
